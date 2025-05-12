@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    .cabecera{
+     padding-top:5px ;
+     padding-bottom:10px;
+     background-color: rgba(163, 135, 83, 0.829);
+     top: 0;
+     left: 0;
+     width: 100%; 
+     position: fixed;
+    }
+    
+    
+    
+    .cabecera .link-logo .logo{
+    vertical-align: middle;
+    
+    }
+    
+    
+    .cabecera .link-logo .logo{
+    width: 130px;
+    height: 110px;
+    }
+    
+    .cabecera .menu{
+        display: inline-block;
+        margin-left: 50%;
+    }
+    
+    
+    .cabecera .menu a{
+    font-family: Arimo;
+    transition: all 0.5 ease ;
+    margin-left: 3px;
+    margin-right: 9px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase   ;
+    text-decoration: none;
+    letter-spacing: 2px;
+    word-spacing: 8px ;
+    padding: 12px 8px ;
+    border-radius: 8px;
+    }
+    
+    
+    .cabecera .menu a:hover{
+    background-color: blue;
+    
+    
+    
+    }
+    
+    
+    
