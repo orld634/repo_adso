@@ -1,186 +1,272 @@
-*{
+:root {
+    --primary-color: #f17827;
+    --secondary-color: #333;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    
+}
+
+* {
     margin: 0;
     padding: 0;
-    }
-    
-    .cabecera{
-     padding-top:5px ;
-     padding-bottom:10px;
-     background-color: rgba(233, 132, 9, 0.829);
-     top: 0;
-     left: 0;
-     width: 100%;
-     position: fixed;
-    }
-    
-    
-    
-    .cabecera .link-logo .logo{
-    vertical-align: middle;
-    
-    }
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
 
-     .h1{
-        margin-left: 20%;
-        display: inline-block;
+body {
+    background-color:  #f9f9f9;
+    color: var(--text-color);
+}
 
-     }
-    
-    
-    .cabecera .link-logo .logo{
+.cabecera {
+    padding: 10px 0;
+    background-color: rgba(255, 144, 9, 0.952);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cabecera .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cabecera .link-logo .logo {
     width: 135px;
-    height: 120px;
-    }
-    
-    .cabecera .menu{
-        display: inline-block;
-        margin-left: 50%;
-    }
-    
-    
-    .cabecera .menu a{
-    font-family: Arimo;
-    transition: all 0.5 ease ;
+    height: auto;
+    vertical-align: middle;
+}
+
+.cabecera .h1{
     margin-left: 20px;
-    margin-right: 9px;
+    display: inline-block;
+    color: white;
+    
+}
+
+.cabecera .menu {
+    display: flex;
+}
+
+.cabecera .menu a {
+    font-family: "Roboto Slab", serif;
     color: white;
     font-size: 17px;
     font-weight: bold;
-    text-transform: uppercase   ;
+    text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
-    word-spacing: 8px ;
-    padding: 12px 8px ;
+    padding: 12px 15px;
     border-radius: 8px;
-    }
-    
-    
-    .cabecera .menu a:hover{
+    transition: all 0.3s ease;
+    margin: 0 5px;
+}
+
+.cabecera .menu a:hover {
     background-color: black;
-    
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
 
 
-    }
-
- h1{
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-    background-color: rgb(255, 145, 0);
+.carta {
     text-align: center;
- }
+    padding: 20px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
 
-
-  
- 
-
- .carta{
- text-align: center;
- padding: 20px;
-
-
- }
- .carta a{
-    font-size: 30px;
+.carta a {
+    font-size: 24px;
     font-family: 'Arimo', sans-serif;
     font-weight: bold;
     text-decoration: none;
-   
-   
-    }
-   
-
-
-
- .cartaing{
-   text-align: center;
-   word-spacing: 30px;
-
- }
-
-
-    #lacarta{
-    cursor:pointer ;
-
-    }
-
-
-    p{
-    font-family: 'arimo';
-    font-size: 25px
-
-    }
-    .section{
-    width:100%;
-    height: 100vh;
-    padding: 0;
-    margin: 20 px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    }
-
-   .ecard-container{
-      display: flex;
-      gap: 50px;
-      flex-wrap: wrap;
-      justify-content: center;
-   }
-   .ecard{
-      background-color: white;
-      border-radius: 1rem;
-      box-shadow: 0 4px 12px rgba(black 0 ,0 ,0, 0.1);
-      width: 500px;
-      height: 750px;
-      overflow:hidden;
-      text-align: center;
-      margin: 10px;
-      border: 5px solid;
-      
-   }
-
-   
-
-   .ecard{
-      margin: 10px;
-   }
-
-   .ecard img{
-    width: 85%;
-    height: auto;
+    color: rgb(255, 145, 0);
     display: block;
-   }
-   .ecard-content{
-     padding: 1rem;
+    margin: 10px 0;
+}
 
-   }
-   .ecard h2{
-      margin: 0.5rem 0;
-      font-size: 1.25rem;
-      font-weight:bold ;
-   }
-   .ecard p{
-      font-size: 1.25rem;
-      color: rgb(46, 42, 42);
-      margin-bottom: 1rem;
-   }
+.cartaing {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
 
-   .ecard .carrito{
-   width: 60%;
-   border: 200px;
-   padding: 0.7rem 1.5rem;
-    border-radius:0.5rem ;
+.cartaing img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#lacarta {
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Arimo', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.ecard-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.ecard {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow:  0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.ecard:hover {
+    transform: translateY(-10px);
+}
+
+.ecard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.ecard-content {
+    padding: 1rem;
+}
+
+.ecard h2 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:  #333;
+}
+
+.ecard p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.ecard .carrito {
+    width: 60%;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.5rem;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-left: 150px;
+    margin: 0 auto;
+    display: block;
+}
 
-
-   }
-
-   .ecard .carrito:hover{
+.ecard .carrito:hover {
     background-color: rgb(0, 204, 255);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#contactos {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#contactos h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#contactos p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#contactos button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactos button:hover {
+    background-color: var(--secondary-color);
+}
+.link-logo .facebook{
+  padding: 0.7rem 1.5rem;
+  width: 115px;
+  height: auto;
+  vertical-align: middle;
+
+}
+
+ .link-logo .checket{
+ margin-top: -30px;
+padding: 0.7rem 1.5rem;
+  width: 115px;
+  height: auto;
+
+}
 
 
 
-   }
+
+
+ h1 {
+     font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+.link-logo .botton{
+ margin-top: -29px;
+height: 50px;
+width: 50px;
+margin-bottom: 30px;
+
+}
+
